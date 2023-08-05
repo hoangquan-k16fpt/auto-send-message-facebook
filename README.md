@@ -8,4 +8,5 @@ or can be found by clicking on any image of that account (except for the avatar)
 ### Notice: To make it work, you need to pip install package fbchat to your device and change the value of the 190th line in the __state.py file to 1. Another choice, you can import my 'myfbchatqt' library for quick use and no error. 
 
 Require: $pip install flask
+
 $pip install fbchat
