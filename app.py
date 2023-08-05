@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
-from mypackage import Client
-from mypackage.models import *
+from fbchat import Client
+from fbchat.models import *
 
 app = Flask(__name__)
 
@@ -48,4 +48,4 @@ def success():
 
 # Thêm đoạn mã sau để chạy ứng dụng với Gunicorn
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8888)
+    app.run(host="0.0.0.0", port=8888, debug=True)

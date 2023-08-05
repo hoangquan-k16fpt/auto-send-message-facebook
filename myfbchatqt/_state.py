@@ -142,6 +142,7 @@ class State(object):
         if "checkpoint" in r.url and ('id="approvals_code"' in r.text.lower()):
             code = on_2fa_callback()
             r = _2fa_helper(session, code, r)
+    
 
         # Sometimes Facebook tries to show the user a "Save Device" dialog
         if "save-device" in r.url:
